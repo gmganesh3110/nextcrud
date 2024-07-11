@@ -8,7 +8,7 @@ const RemoveBtn = ({id}) => {
     try {
       const confirmed=confirm('Are you sure?')
       if(confirmed){
-        await fetch("http://localhost:3000/api/topics?id="+id,{
+        await fetch("https://nextcrud-p5hk8w5sc-ganeshgmpersonal1gmailcoms-projects.vercel.app/api/topics?id="+id,{
           method:"DELETE",
         })
         router.refresh()

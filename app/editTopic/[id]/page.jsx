@@ -12,7 +12,7 @@ const EditTopic = ({ params }) => {
 
   const getTopicById = async () => {
     try {
-      const res = await fetch("http://localhost:3000/api/topics?id=" + id, {
+      const res = await fetch("https://nextcrud-p5hk8w5sc-ganeshgmpersonal1gmailcoms-projects.vercel.app/api/topics?id=" + id, {
         method: "GET",
       });
       const {topics} = await res.json();
@@ -26,7 +26,7 @@ const EditTopic = ({ params }) => {
   const updateTopic = async (e) => {
     e.preventDefault();
     try {
-      const res = await fetch("http://localhost:3000/api/topics?id=" + id, {
+      const res = await fetch("https://nextcrud-p5hk8w5sc-ganeshgmpersonal1gmailcoms-projects.vercel.app/api/topics?id=" + id, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
