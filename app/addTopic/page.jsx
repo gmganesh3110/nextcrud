@@ -9,7 +9,7 @@ const AddTopic = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res= await fetch("/api/topics", {
+      const res= await fetch("http://localhost:3000/api/topics", {
         method: "POST",
         headers: {
           "Context-type": "application/json",

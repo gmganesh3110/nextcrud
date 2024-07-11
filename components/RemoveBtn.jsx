@@ -8,7 +8,7 @@ const RemoveBtn = ({id}) => {
     try {
       const confirmed=confirm('Are you sure?')
       if(confirmed){
-        await fetch("/api/topics?id="+id,{
+        await fetch("http://localhost:3000/api/topics?id="+id,{
           method:"DELETE",
         })
         router.refresh()
